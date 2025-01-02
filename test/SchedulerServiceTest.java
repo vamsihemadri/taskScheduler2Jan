@@ -30,7 +30,7 @@ public class SchedulerServiceTest {
             count++;
 
             if(count==5){
-                customExecutor.shutDownV1();
+                customExecutor.shutDownV0();
             }
 
             Thread.sleep(10000);

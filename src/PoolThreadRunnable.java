@@ -27,7 +27,7 @@ public class PoolThreadRunnable implements Runnable{
         }
     }
 
-    public  void forceStop(){
+    public void forceStop(){
         this.isStopped = false;
         this.thread.interrupt();
     }

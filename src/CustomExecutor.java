@@ -2,5 +2,5 @@ public interface CustomExecutor {
 
     void execute(Runnable runnable);
 
-    void shutDownV1();
+    void shutDownV0();
 }

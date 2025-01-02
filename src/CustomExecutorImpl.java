@@ -37,7 +37,7 @@ public class CustomExecutorImpl implements CustomExecutor {
     }
 
     @Override
-    public synchronized void shutDownV1() {
+    public synchronized void shutDownV0() {
         isStopped  = true;
         for(PoolThreadRunnable runnable: runnableList){
             runnable.forceStop();
