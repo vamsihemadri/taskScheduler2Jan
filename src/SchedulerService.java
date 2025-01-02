@@ -5,8 +5,8 @@ public class SchedulerService {
     public SchedulerService(CustomExecutor executor) {
         this.scheduler = new Scheduler(executor);
 
-        new Thread(scheduler).start();
-        //executor.execute(scheduler);
+        //new Thread(scheduler).start();
+        executor.execute(scheduler);
     }
 
 
