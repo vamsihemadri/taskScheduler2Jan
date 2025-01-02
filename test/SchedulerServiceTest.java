@@ -25,8 +25,15 @@ public class SchedulerServiceTest {
         schedulerService.schduleFixedIntervaltask(()->System.out.println(" fixed delay Task 1"),2000,1000);
         schedulerService.schduleFixedIntervaltask(()->System.out.println(" fixed delay task 2 "), 4000, 1000);
 
+        int count = 0;
         while(true){
+            count++;
 
+            if(count==5){
+                customExecutor.shutDownV1();
+            }
+
+            Thread.sleep(10000);
         }
     }
 }

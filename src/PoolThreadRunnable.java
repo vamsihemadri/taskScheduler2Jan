@@ -14,6 +14,7 @@ public class PoolThreadRunnable implements Runnable{
 
     @Override
     public void run() {
+        this.thread = Thread.currentThread();
         while(!isStopped){
 
             try {
